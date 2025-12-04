@@ -1,0 +1,114 @@
+quienes somos:
+
+Somos una agrupación de técnicos autorizados por la superintendencia de electricidad y combustibles SEC. Además, contamos con certificación de la seremi metropolitano de salud del ambiente, para sistemas de centrales térmicas y calderas de calefacción central y agua caliente sanitaria para comunidades.
+Contamos con equipamiento e instrumentacion de alta tecnologia en chile, para poner a su disposicion en materia de normalizaciones de sistemas , redes de gas, equipos de calefaccion, tanto calefont y calderas.
+
+----------------------------------------------
+
+nuestras especialidades:
+
+Calefont Ionizados:
+
+Servicio técnico autorizado por la SEC y seremi de salud SESMA. Realizamos reparación mantención e instalación de equipos de gas, domésticos e industriales. Calefont ionizados, calderas, calefont tiro forzado, centrales térmicas en comunidades.
+
+Calderas Murales:
+
+Prestamos el servicio de instalación, reparación y mantenimiento de calderas. Además instalación de sistemas de calefacción, climatización, con un seguimiento personalizado en cada proyecto.
+
+Centrales Térmicas:
+
+Reparación mantención e instalación de equipos de gas, domésticos e industriales. Calefont ionizados, calderas, calefont tiro forzado, centrales térmicas en comunidades. Splendid, junkers, saturn, trotter, todas las marcas y modelos.
+
+Climaticación:
+
+Servicio técnico certificado especialistas en equipo de aire acondicionado. Todas las marcas y modelos, splits, ventana, piso cielo, cassette. Servicios de mantenimiento, instalaciones y reparaciones.
+
+Instalación y Normalización de instalaciones de gas:
+
+Realizamos una visita técnica en donde evaluamos y revisamos minuciosamente su calefont, también realizamos diferentes test para comprobar y asegurarnos que quede completamente operativo.
+
+Mantención de Cocinas:
+
+Examinamos el funcionamiento de su cocina, además realizamos mediciones de temperaturas, medición de gases, etc. Limpiamos y cambiamos las piezas dañadas. Le recomendamos realizar mantenciones periódicas (una vez por año) de estos artefactos a gas.
+
+-----------------------------------------
+
+servicios:
+
+Dentro de la especialidad de calderas, climatización y manejo de energía, ofrecemos nuestros servicios en los siguientes ámbitos especifícos:
+
+Proyectos de Calefacción Central.
+Redes de Gas.
+Redes e Instalaciones sanitarias.
+Aire acondicionado.
+Unidades de refrigeración.
+Servicio técnico y mantención de sistemas de calefacción central.
+Certificación ante la superintendencia de electricidad y combustibles S.E.C.
+
+Nuestro servicio técnico ofrece:
+
+Servicio de reparación
+Mantención
+Instalación
+Normalización
+Conversiones de calefones y calderas (cambio gas)
+Puesta en marcha
+Asesorías en línea (consultas técnicas y/o de funcionamiento de los equipos).
+
+Beneficios que nuestros clientes pueden optar al solicitar los servicios de pagina:
+
+Mantención de la garantía
+Repuestos originales
+Bitácora de atención por cliente
+Técnicos certificados SEC1
+
+crear un boton que te direcciones a servicio.html
+
+boton: ver mas
+
+--------------------------------------------
+
+otras categorias:
+
+-Certificación Refrigeración AA:
+
+Ofrecemos nuestros servicios en el área de la climatización de ambientes, para mantener temperaturas agradables y acondicionadas a vuestra solicitud en frio y calor. También en la conservación de alimentos, mercaderías y todo lo que usted necesite mantener y prolongar la mantención de productos al interior de cámaras de refrigeración.
+
+- Limpieza, unidad interior, filtros, unidad exterior. Carga de gas refrigerante.
+
+- Detección y eliminación de fugas de gas refrigerante. Mejoramiento de la capacidad de   enfriamiento o calor.
+
+refrigeracion:
+
+Cámaras de mantención, cámaras de congelación, cámaras de golpe frio, túneles de frio, mejora en rendimiento, mantención, reparación, instalación, carga de gas refrigerante.
+
+- Detección de Fuga Agua y Gas:
+
+Realizamos detección, búsqueda y reparaciones de fugas de agua y gas. Ponemos a vuestra disposición geófono electrónico capaza de detectar escape de agua con margen de error de 1 metro. Además poseemos analizadores de combustión y detectores electrónicos marca TIFF americanos para la detección de fugas de gas. Realizamos pruebas de hermeticidad a todo el tendido de red de gas natural o licuado para confirmación de caídas de presión.
+
+entrevistas (este boton se incorpora al navbar) direccionando al archivo entrevista.html
+
+----------------------------------------
+
+a continuacion la informacion que viene es la que se incorpora en el footer
+
+contacto:
+
+- direccion: Av.Providencia # 1622 oficina 18. Providencia, Santiago, Chile.
+
+- telefono: 
+
+Teléfono Fijo: 2-2358595
+Teléfono Movil: +56982283541
+
+- email: 
+contacto@climagasecpro.cl
+
+horarios:
+
+lunes a viernes
+de 09:00 a 20:00 hrs.
+
+redes sociales:
+
+
