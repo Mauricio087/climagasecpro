@@ -42,7 +42,7 @@ class AnimationManager {
             });
         }, {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin: '0px'
         });
 
         observer.observe(element);
@@ -239,7 +239,7 @@ class AnimationManager {
         entryAnimations.forEach(animation => {
             const elements = document.querySelectorAll(`.animate-${animation}`);
             elements.forEach(element => {
-                element.style.opacity = '0';
+                // element.style.opacity = '0';
                 element.style.transform = this.getInitialTransform(animation);
             });
         });

@@ -302,6 +302,7 @@
 }
 
 /* Animación de aparición de secciones */
+/* 
 .section {
     opacity: 0;
     transform: translateY(30px);
@@ -311,4 +312,5 @@
 .section.visible {
     opacity: 1;
     transform: translateY(0);
-}
+} 
+*/
