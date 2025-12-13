@@ -481,8 +481,9 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--dark-color);
-    color: var(--white);
+    background-color: #002E5D;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+    color: #ecf0f1;
     padding: 3rem 0 1rem;
 }
 
@@ -503,7 +504,7 @@ body {
 }
 
 .footer-section h4 {
-    color: var(--primary-color);
+    color: var(--accent-color);
     margin-bottom: 1rem;
 }
 
@@ -516,20 +517,20 @@ body {
 }
 
 .footer-section ul li a {
-    color: var(--white);
+    color: #ecf0f1;
     text-decoration: none;
     transition: var(--transition);
 }
 
 .footer-section ul li a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid #444;
-    color: #888;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ecf0f1;
 }
 
 /* WhatsApp Float Button */
