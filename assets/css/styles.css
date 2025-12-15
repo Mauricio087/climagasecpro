@@ -341,7 +341,37 @@ body {
 
 /* Services Section */
 .services-section {
-    background: var(--light-color);
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../../img/22.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.services-section .section-title,
+.services-section .section-subtitle {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+
+.services-section .section-title::after {
+    background: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+
+/* Transparencia para tarjetas en Sección Servicios */
+.services-section .service-card,
+.services-section .service-main-card,
+.services-section .services-features,
+.services-section .services-benefits {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.services-section .feature-item,
+.services-section .benefit-item {
+    background: rgba(245, 247, 250, 0.75);
+    backdrop-filter: blur(3px);
 }
 
 .services-grid {
@@ -413,8 +443,8 @@ body {
     color: var(--white);
     text-align: center;
     padding: 4rem 2rem;
-    border-radius: var(--border-radius);
-    margin-top: 4rem;
+    border-radius: 0;
+    margin-top: 0;
 }
 
 .cta-content h3 {
@@ -430,15 +460,13 @@ body {
 
 /* Contact Section */
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .contact-item {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    display: none; /* Ocultar por si acaso existe */
 }
 
 .contact-item i {
@@ -453,9 +481,13 @@ body {
 }
 
 .contact-form {
-    background: var(--light-color);
-    padding: 2rem;
+    background: var(--primary-color);
+    padding: 3rem;
     border-radius: var(--border-radius);
+    box-shadow: 0 15px 40px rgba(0, 46, 93, 0.3);
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .form-group {
@@ -466,10 +498,28 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid #ddd;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: var(--border-radius);
     font-size: 1rem;
     transition: var(--transition);
+}
+
+.contact-form .btn-primary {
+    background: var(--accent-color);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 250px;
+}
+
+.contact-form .btn-primary:hover {
+    background: #e65c00;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(230, 92, 0, 0.3);
 }
 
 .form-group input:focus,
@@ -597,10 +647,52 @@ body {
     animation: pulse 2s infinite;
 }
 
+/* Divisor de secciones */
+.section-divider {
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    position: relative;
+    z-index: 100;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
 /* Sección Principal de Servicios */
 .services-main-section {
-    background: var(--light-gray);
+    background: linear-gradient(rgba(0, 46, 93, 0.45), rgba(0, 46, 93, 0.45)), url('../../img/109.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 80px 0;
+}
+
+/* Transparencia para tarjetas en Sección Servicios Principales */
+.services-main-section .service-main-card,
+.services-main-section .services-features,
+.services-main-section .services-benefits {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.services-main-section .feature-item,
+.services-main-section .benefit-item {
+    background: rgba(245, 247, 250, 0.75) !important;
+    backdrop-filter: blur(3px);
+}
+
+/* Ajuste de textos para Sección Servicios Principales */
+.services-main-section .section-title,
+.services-main-section .section-subtitle {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+
+.services-main-section .section-title::after {
+    background: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.9);
 }
 
 .services-main-grid {
