@@ -49,8 +49,9 @@ body {
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
-    transition: var(--transition);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Transición más suave */
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    will-change: transform; /* Optimización de rendimiento */
 }
 
 .navbar.scrolled {

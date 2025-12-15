@@ -90,17 +90,70 @@ function initHeroAnimations() {
     }
 }
 
-// Navbar scroll effect
+// Navbar scroll effect - Versión ultra-estable con debounce
 function initNavbarScroll() {
     const navbar = document.getElementById('navbar');
+    let lastScrollY = window.scrollY;
+    let isHidden = false;
+    let scrollTimeout;
+    let lastActionScrollY = window.scrollY; // Referencia para evitar cambios consecutivos
     
     if (navbar) {
         window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) {
+            const currentScrollY = window.scrollY;
+            
+            // Evitar scroll negativo (rubber banding)
+            if (currentScrollY < 0) return;
+
+            // Efecto de fondo (transparencia/sombra) - siempre actualizar
+            if (currentScrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
+            
+            // Limpiar timeout anterior
+            clearTimeout(scrollTimeout);
+            
+            // Debounce: esperar a que el scroll se detenga
+            scrollTimeout = setTimeout(() => {
+                // Obtener altura del hero (viewport menos padding del navbar)
+                const heroHeight = window.innerHeight - 110; // 110px es el padding-top del body
+                
+                // Si estamos en la zona hero, siempre mostrar
+                if (currentScrollY < heroHeight) {
+                    navbar.style.transform = 'translateY(0)';
+                    isHidden = false;
+                    lastScrollY = currentScrollY;
+                    lastActionScrollY = currentScrollY;
+                    return;
+                }
+                
+                const diff = currentScrollY - lastScrollY;
+                
+                // Umbral muy alto para prevenir cualquier rebote
+                const threshold = 50; // 50px de movimiento mínimo
+                
+                // Prevenir cambios consecutivos rápidos
+                const actionDiff = Math.abs(currentScrollY - lastActionScrollY);
+                if (actionDiff < 100) return; // No actuar si no nos hemos movido suficiente desde la última acción
+                
+                if (Math.abs(diff) > threshold) {
+                    if (diff > 0 && !isHidden) {
+                        // Bajando: Ocultar
+                        navbar.style.transform = 'translateY(-100%)';
+                        isHidden = true;
+                        lastActionScrollY = currentScrollY;
+                    } else if (diff < 0 && isHidden && currentScrollY < heroHeight) {
+                        // Subiendo: Solo mostrar si estamos en la zona hero
+                        navbar.style.transform = 'translateY(0)';
+                        isHidden = false;
+                        lastActionScrollY = currentScrollY;
+                    }
+                    // Actualizar la referencia solo cuando actuamos
+                    lastScrollY = currentScrollY;
+                }
+            }, 150); // Esperar 150ms a que el scroll se detenga
         });
     }
 }
