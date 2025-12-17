@@ -49,9 +49,8 @@ body {
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Transición más suave */
+    transition: var(--transition);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    will-change: transform; /* Optimización de rendimiento */
 }
 
 .navbar.scrolled {
@@ -1320,6 +1319,13 @@ body {
 @media (max-width: 480px) {
     .stats-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Centrar card manteniendo el tamaño de la grilla */
+@media (min-width: 992px) {
+    .category-services .centered-card {
+        grid-column: 2;
     }
 }
 

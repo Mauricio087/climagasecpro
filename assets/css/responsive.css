@@ -40,7 +40,19 @@
 
 /* Tablets pequeñas y móviles grandes */
 @media (max-width: 768px) {
-    /* Navegación responsive */
+    /* Navegación responsive - Ajustar navbar al ancho de las secciones */
+    .navbar {
+        /* Usar left/right en lugar de width:100% para respetar márgenes */
+        left: 0;
+        right: 0;
+        width: auto;
+    }
+    
+    .nav-container {
+        /* Alinear con el padding de las demás secciones */
+        padding: 0 15px; /* Mismo que .container en tablets */
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -240,10 +252,6 @@
     }
     
     .container {
-        padding: 0 10px;
-    }
-    
-    .nav-container {
         padding: 0 10px;
     }
     
