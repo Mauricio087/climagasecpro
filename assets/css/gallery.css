@@ -5,31 +5,53 @@
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
+    grid-auto-flow: dense; /* Helps pack items better */
+}
+
+/* Variaciones de tamaño para hacerlo más atractivo */
+.gallery-item.wide {
+    grid-column: span 2;
+}
+
+.gallery-item.tall {
+    grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+    .gallery-item.wide, 
+    .gallery-item.tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
-    border-radius: var(--border-radius);
+    border-radius: 12px; /* Border radius explícito */
     box-shadow: var(--shadow);
     transition: var(--transition);
     cursor: pointer;
     background: var(--white);
+    height: 100%; /* Ocupar toda la altura disponible */
+    display: flex; /* Para asegurar que la imagen ocupe todo */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%; /* Ocupar el 100% de la altura del contenedor */
+    object-fit: cover; /* Recortar para llenar sin deformar */
+    transition: var(--transition);
+    border-radius: 12px; /* Asegurar border radius en la imagen */
+    display: block; /* Eliminar espacio fantasma inferior */
 }
 
 .gallery-item:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: var(--transition);
 }
 
 .gallery-item:hover img {
