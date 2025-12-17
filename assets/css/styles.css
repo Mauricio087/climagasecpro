@@ -608,6 +608,41 @@ body {
     transform: scale(1.1);
 }
 
+/* Scroll Top Button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background: var(--primary-color);
+    color: var(--white);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
 /* Utilidades */
 .img-fluid {
     max-width: 100%;

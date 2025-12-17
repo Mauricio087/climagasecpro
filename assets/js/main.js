@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initHeroAnimations();
     initNavbarScroll();
     initSmoothScroll();
+    initScrollTopButton();
     initFormValidation();
     initLazyLoading();
 });
@@ -182,6 +183,30 @@ function initSmoothScroll() {
             }
         });
     });
+}
+
+// Botón Volver Arriba (Scroll Top)
+function initScrollTopButton() {
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    if (scrollTopBtn) {
+        // Mostrar/ocultar al hacer scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+
+        // Scroll al hacer click
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 }
 
 // Validación de formularios
