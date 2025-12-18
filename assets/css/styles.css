@@ -732,6 +732,23 @@ body {
     backdrop-filter: blur(3px);
 }
 
+.services-main-section .feature-item:hover,
+.services-main-section .benefit-item:hover {
+    background: #ffffff !important;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.services-main-section .feature-item:hover i,
+.services-main-section .feature-item:hover span {
+    color: var(--primary-color) !important;
+}
+
+.services-main-section .benefit-item:hover i,
+.services-main-section .benefit-item:hover span {
+    color: var(--secondary-color) !important;
+}
+
 /* Ajuste de textos para Sección Servicios Principales */
 .services-main-section .section-title,
 .services-main-section .section-subtitle {
@@ -817,8 +834,8 @@ body {
 }
 
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
@@ -829,6 +846,7 @@ body {
     background: var(--light-gray);
     border-radius: 10px;
     transition: var(--transition);
+    flex: 1 1 250px;
 }
 
 .feature-item:hover {
@@ -866,14 +884,17 @@ body {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
 .benefit-item {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    text-align: center;
+    padding: 30px;
     background: var(--light-gray);
     border-radius: 10px;
     transition: var(--transition);
@@ -882,12 +903,13 @@ body {
 .benefit-item:hover {
     background: var(--secondary-color);
     color: var(--white);
-    transform: translateX(5px);
+    transform: translateY(-5px);
 }
 
 .benefit-item i {
-    font-size: 1.5rem;
-    margin-right: 15px;
+    font-size: 2rem;
+    margin-right: 0;
+    margin-bottom: 15px;
     color: var(--secondary-color);
     transition: var(--transition);
 }
