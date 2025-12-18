@@ -100,15 +100,23 @@
     }
     
     .hero-buttons {
-        flex-direction: column;
+        flex-direction: row; /* Cambiado a row para mostrar en la misma fila */
         align-items: center;
         gap: 1rem;
+        flex-wrap: wrap; /* Permitir envolver si es muy estrecho */
     }
     
     .hero-features {
-        flex-direction: column;
+        flex-direction: row; /* Cambiado a row para agruparlos mejor */
+        justify-content: center;
         align-items: center;
-        gap: 1rem;
+        column-gap: 1rem; /* Espacio horizontal */
+        row-gap: 0.1rem; /* Espacio vertical mínimo para que estén bien pegados si hacen salto de línea */
+        flex-wrap: wrap;
+    }
+    
+    .feature-item {
+        font-size: 0.9rem; /* Un poco más pequeño para que quepan bien */
     }
     
     /* Secciones responsive */
