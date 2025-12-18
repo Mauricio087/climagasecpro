@@ -939,7 +939,7 @@ body {
 .category-services {
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjusted to fit 4 columns */
     gap: 1.5rem;
 }
 
@@ -1371,11 +1371,6 @@ body {
     }
 }
 
-/* Centrar card manteniendo el tamaño de la grilla */
-@media (min-width: 992px) {
-    .category-services .centered-card {
-        grid-column: 2;
-    }
-}
+/* Centrar card eliminado para permitir grid de 4 */
 
 

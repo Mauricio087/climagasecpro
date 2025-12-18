@@ -73,6 +73,11 @@
     .hamburger {
         display: flex;
     }
+    
+    /* Ajuste de logo en móvil */
+    .logo-img {
+        margin-top: 5px; /* Ajuste para nivelar visualmente */
+    }
 
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
