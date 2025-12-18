@@ -208,13 +208,16 @@ body {
 .hero-features {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .feature-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     font-size: 1rem;
     opacity: 0.9;
